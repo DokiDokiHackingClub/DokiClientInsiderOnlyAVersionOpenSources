@@ -37,7 +37,7 @@ public class TenacityMainMenu extends GuiScreen {
     private final List<OptionButton> sidebarButtons = new ArrayList() {{
         add(new OptionButton(FontUtil.XMARK, "Exit"));
         add(new OptionButton(FontUtil.SETTINGS, "Settings"));
-        add(new OptionButton("Discord"));
+        add(new OptionButton("QQ"));
         add(new OptionButton(FontUtil.SCRIPT, "Scripting"));
     }};
 
@@ -143,10 +143,10 @@ public class TenacityMainMenu extends GuiScreen {
                         sideButton.color = new Color(80, 194, 255);
                         sideButton.clickAction = () -> mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
                         break;
-                    case "Discord":
+                    case "QQ":
                         sideButton.color = new Color(88, 101, 242);
                         sideButton.iconAdjustY = 4;
-                        sideButton.clickAction = () -> NetworkingUtils.openLink("https://tenacity.dev/discord");
+                        sideButton.clickAction = () -> NetworkingUtils.openLink("https://jq.qq.com/?_wv=1027&k=FbFpZfDK");
                         break;
                     case "Scripting":
                         sideButton.color = new Color(255, 80, 126);
