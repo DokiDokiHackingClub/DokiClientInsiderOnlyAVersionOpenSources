@@ -375,9 +375,7 @@ public class GuiIngame extends Gui
         GlStateManager.disableLighting();
         GlStateManager.enableAlpha();
         
-        mc.fontRendererObj.drawString("��������/����/����/����/����/����й¶/ +QQ3132336940 tg��Ⱥ", scaledresolution.getScaledWidth() / 2 - 100, 10, Color.RED.getRGB());
-        mc.fontRendererObj.drawString("�չ����ݷǷ��Ŀ� ���룺��������/��Ҫ�������֤�ֻ���/ tg@akkkkpuji +QQ3132336940 tg��Ⱥ", scaledresolution.getScaledWidth() / 2 - 150, 20, Color.RED.getRGB());
-        mc.fontRendererObj.drawString("*Treasury Client*", scaledresolution.getScaledWidth() / 2 - 100, 30, Color.RED.getRGB());
+
     }
 
     protected void renderTooltip(ScaledResolution sr, float partialTicks)
