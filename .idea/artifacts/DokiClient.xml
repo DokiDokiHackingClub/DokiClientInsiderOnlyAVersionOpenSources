@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DokiClient">
+    <output-path>$PROJECT_DIR$/out/artifacts/DokiClient</output-path>
+    <root id="archive" name="DokiClient.jar">
+      <element id="module-output" name="DokiClient" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/spotify-web-api-java-6.5.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.8.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/vecmath-1.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/checker-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/lombok-1.18.11.97.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-text-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/httpcore5-5.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

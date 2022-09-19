@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spotify-web-api-java-6.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/vecmath-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/checker-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lombok-1.18.11.97.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-text-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpcore5-5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
