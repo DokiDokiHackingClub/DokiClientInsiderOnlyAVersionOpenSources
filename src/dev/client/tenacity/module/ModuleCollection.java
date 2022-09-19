@@ -56,6 +56,8 @@ public class ModuleCollection {
     }
 
     public void init() {
+        this.modules.put(IQBoost.class,new IQBoost());
+        this.modules.put(FixInp.class,new FixInp());
         this.modules.put(AutoHead.class, new AutoHead());
         this.modules.put(AutoPot.class, new AutoPot());
         this.modules.put(Criticals.class, new Criticals());
