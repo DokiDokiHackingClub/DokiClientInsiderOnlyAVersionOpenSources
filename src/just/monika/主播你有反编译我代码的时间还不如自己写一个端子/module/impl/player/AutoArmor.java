@@ -1,14 +1,14 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.player;
 
-import dev.event.EventListener;
-import dev.event.impl.player.MotionEvent;
+import just.monika.反编译我代码油饼食不食.event.EventListener;
+import just.monika.反编译我代码油饼食不食.event.impl.player.MotionEvent;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Category;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.NumberSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.NumberSetting;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.player.InventoryUtils;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.player.MovementUtils;
-import dev.utils.time.TimerUtil;
+import just.monika.反编译我代码油饼食不食.utils.time.TimerUtil;
 import net.minecraft.client.gui.inventory.GuiInventory;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;

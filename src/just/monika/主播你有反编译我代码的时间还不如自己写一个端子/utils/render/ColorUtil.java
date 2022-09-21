@@ -1,9 +1,10 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render;
 
-import static dev.utils.misc.MathUtils.*;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
+
+import static just.monika.反编译我代码油饼食不食.utils.misc.MathUtils.interpolateFloat;
+import static just.monika.反编译我代码油饼食不食.utils.misc.MathUtils.interpolateInt;
 
 public class ColorUtil {
 

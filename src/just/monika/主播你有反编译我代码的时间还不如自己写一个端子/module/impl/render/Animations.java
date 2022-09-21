@@ -3,8 +3,8 @@ package just.monika.主播你有反编译我代码的时间还不如自己写一
 
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Category;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.ModeSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ModeSetting;
 
 public final class Animations extends Module {
 

@@ -1,17 +1,17 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.sidegui;
 
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.ClickGuiMod;
-import dev.utils.animations.Animation;
-import dev.utils.animations.Direction;
-import dev.utils.animations.impl.DecelerateAnimation;
-import dev.utils.font.FontUtil;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.animations.Direction;
+import just.monika.反编译我代码油饼食不食.utils.animations.impl.DecelerateAnimation;
+import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.misc.HoveringUtil;
-import dev.utils.misc.MathUtils;
-import dev.utils.objects.Drag;
+import just.monika.反编译我代码油饼食不食.utils.misc.MathUtils;
+import just.monika.反编译我代码油饼食不食.utils.objects.Drag;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.ColorUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RenderUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RoundedUtil;
-import dev.utils.time.TimerUtil;
+import just.monika.反编译我代码油饼食不食.utils.time.TimerUtil;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 

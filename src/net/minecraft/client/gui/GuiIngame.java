@@ -2,10 +2,10 @@ package net.minecraft.client.gui;
 
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
-import dev.client.Client;
+import just.monika.开裂我端子的反编译我几行代码死几个妈.Client;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.BlurModule;
-import dev.event.impl.render.Render2DEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.render.Render2DEvent;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.ScoreboardMod;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;

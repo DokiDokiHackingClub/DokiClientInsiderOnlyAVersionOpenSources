@@ -1,7 +1,6 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui;
 
-import dev.utils.Utils;
-import net.minecraft.client.Minecraft;
+import just.monika.反编译我代码油饼食不食.utils.Utils;
 
 public interface Screen extends Utils {
 

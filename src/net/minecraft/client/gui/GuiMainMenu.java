@@ -1,8 +1,6 @@
 package net.minecraft.client.gui;
 
 import com.google.common.collect.Lists;
-import dev.client.Client;
-import dev.client.ClientType;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.mainmenu.TenacityMainMenu;
 import net.minecraft.client.Minecraft;
@@ -197,11 +195,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
      */
     public void initGui()
     {
-        if(Client.client == ClientType.TENACITY){
-            mc.displayGuiScreen(new TenacityMainMenu());
-        }else {
-            mc.displayGuiScreen(this);
-        }
+        mc.displayGuiScreen(new TenacityMainMenu());
         this.viewportTexture = new DynamicTexture(256, 256);
         this.backgroundTexture = this.mc.getTextureManager().getDynamicTextureLocation("background", this.viewportTexture);
         Calendar calendar = Calendar.getInstance();

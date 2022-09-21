@@ -1,7 +1,7 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.player;
 
-import dev.event.impl.player.MoveEvent;
-import dev.utils.Utils;
+import just.monika.反编译我代码油饼食不食.event.impl.player.MoveEvent;
+import just.monika.反编译我代码油饼食不食.utils.Utils;
 import net.minecraft.potion.Potion;
 import net.minecraft.util.MathHelper;
 import org.lwjgl.util.vector.Vector2f;

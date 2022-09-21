@@ -5,13 +5,13 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationManager;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationType;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.player.ChatUtils;
-import dev.event.EventListener;
-import dev.event.impl.player.ChatReceivedEvent;
-import dev.settings.ParentAttribute;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.NumberSetting;
-import dev.settings.impl.StringSetting;
-import dev.utils.misc.Multithreading;
+import just.monika.反编译我代码油饼食不食.event.EventListener;
+import just.monika.反编译我代码油饼食不食.event.impl.player.ChatReceivedEvent;
+import just.monika.反编译我代码油饼食不食.settings.ParentAttribute;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.NumberSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.StringSetting;
+import just.monika.反编译我代码油饼食不食.utils.misc.Multithreading;
 import net.minecraft.util.StringUtils;
 
 import java.util.concurrent.TimeUnit;

@@ -7,7 +7,7 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.AltPanel;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.helpers.Alt;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.helpers.AltManagerUtils;
-import dev.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import org.apache.commons.text.RandomStringGenerator;

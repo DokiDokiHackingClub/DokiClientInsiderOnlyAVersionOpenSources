@@ -3,8 +3,8 @@ package just.monika.主播你有反编译我代码的时间还不如自己写一
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.panels.components.Component;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.helpers.AltManagerUtils;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.objects.PasswordField;
-import dev.utils.animations.Animation;
-import dev.utils.font.FontUtil;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
 
 public class StringField extends Component {
     private final boolean password;

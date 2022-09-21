@@ -6,15 +6,15 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.config.ConfigSetting;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.GlowESP;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.NotificationsMod;
-import dev.settings.Setting;
-import dev.settings.impl.KeybindSetting;
+import just.monika.反编译我代码油饼食不食.settings.Setting;
+import just.monika.反编译我代码油饼食不食.settings.impl.KeybindSetting;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationManager;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationType;
-import dev.utils.Utils;
-import dev.utils.animations.Animation;
-import dev.utils.animations.Direction;
-import dev.utils.animations.impl.DecelerateAnimation;
-import dev.utils.misc.Multithreading;
+import just.monika.反编译我代码油饼食不食.utils.Utils;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.animations.Direction;
+import just.monika.反编译我代码油饼食不食.utils.animations.impl.DecelerateAnimation;
+import just.monika.反编译我代码油饼食不食.utils.misc.Multithreading;
 import org.lwjgl.input.Keyboard;
 
 import java.util.Arrays;

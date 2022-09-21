@@ -11,7 +11,7 @@ import com.mojang.authlib.GameProfileRepository;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
-import dev.event.impl.game.GameCloseEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.game.GameCloseEvent;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufOutputStream;
 import io.netty.buffer.Unpooled;

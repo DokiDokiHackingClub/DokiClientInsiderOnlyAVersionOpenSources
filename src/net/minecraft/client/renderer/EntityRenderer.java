@@ -2,10 +2,10 @@ package net.minecraft.client.renderer;
 
 import com.google.common.base.Predicates;
 import com.google.gson.JsonSyntaxException;
-import dev.client.Client;
-import dev.client.ClientType;
+import just.monika.开裂我端子的反编译我几行代码死几个妈.Client;
+import just.monika.开裂我端子的反编译我几行代码死几个妈.ClientType;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
-import dev.event.impl.render.Render3DEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.render.Render3DEvent;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.combat.Reach;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.player.ChestStealer;
 import net.minecraft.block.Block;

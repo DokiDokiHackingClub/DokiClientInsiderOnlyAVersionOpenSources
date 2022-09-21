@@ -1,11 +1,9 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render;
 
-import dev.utils.Utils;
-import dev.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.Utils;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
 
-import static dev.utils.misc.MathUtils.*;
-
-import dev.utils.render.GLUtil;
+import just.monika.反编译我代码油饼食不食.utils.render.GLUtil;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.renderer.GlStateManager;
@@ -14,6 +12,7 @@ import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
 
+import static just.monika.反编译我代码油饼食不食.utils.misc.MathUtils.interpolate;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL11.glScissor;
 

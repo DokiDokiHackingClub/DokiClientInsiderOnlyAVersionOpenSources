@@ -6,9 +6,9 @@ import java.awt.Color;
 import org.lwjgl.opengl.GL11;
 
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RenderUtil;
-import dev.utils.animations.Animation;
-import dev.utils.animations.impl.EaseInOutQuad;
-import dev.utils.font.FontUtil;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.animations.impl.EaseInOutQuad;
+import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;

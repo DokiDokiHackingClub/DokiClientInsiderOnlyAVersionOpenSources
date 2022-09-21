@@ -4,10 +4,10 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RoundedUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.ShaderUtil;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.ColorSetting;
-import dev.settings.impl.ModeSetting;
-import dev.settings.impl.NumberSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ColorSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ModeSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.NumberSetting;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.clickguis.dropdown.DropdownClickGui;
 import org.lwjgl.input.Keyboard;
 

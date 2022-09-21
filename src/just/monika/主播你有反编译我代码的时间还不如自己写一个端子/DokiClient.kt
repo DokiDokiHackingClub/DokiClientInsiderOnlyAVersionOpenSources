@@ -11,9 +11,9 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.sidegui.SideGui
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.client.ReleaseType
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.objects.Dragging
-import dev.event.Event
-import dev.event.EventProtocol
-import dev.utils.Utils
+import just.monika.反编译我代码油饼食不食.event.Event
+import just.monika.反编译我代码油饼食不食.event.EventProtocol
+import just.monika.反编译我代码油饼食不食.utils.Utils
 import org.apache.logging.log4j.LogManager
 import java.awt.Color
 import java.io.File
@@ -23,7 +23,8 @@ import java.util.concurrent.Executors
 enum class DokiClient : Utils {
     INSTANCE;
 
-    val eventProtocol = EventProtocol<Event>()
+    val eventProtocol =
+        EventProtocol<Event>()
     val notificationManager = NotificationManager()
     val executorService = Executors.newSingleThreadExecutor()
     val sideGui = SideGui()

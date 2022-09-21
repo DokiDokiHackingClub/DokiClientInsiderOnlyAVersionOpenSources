@@ -1,13 +1,13 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render;
 
-import dev.event.EventListener;
-import dev.event.impl.render.NametagRenderEvent;
-import dev.event.impl.render.Render2DEvent;
-import dev.event.impl.render.Render3DEvent;
-import dev.settings.ParentAttribute;
-import dev.settings.impl.*;
-import dev.utils.font.FontUtil;
-import dev.utils.misc.MathUtils;
+import just.monika.反编译我代码油饼食不食.event.EventListener;
+import just.monika.反编译我代码油饼食不食.event.impl.render.NametagRenderEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.render.Render2DEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.render.Render3DEvent;
+import just.monika.反编译我代码油饼食不食.settings.ParentAttribute;
+import just.monika.反编译我代码油饼食不食.settings.impl.*;
+import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
+import just.monika.反编译我代码油饼食不食.utils.misc.MathUtils;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Category;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;

@@ -2,9 +2,9 @@ package net.minecraft.network;
 
 import com.google.common.collect.Queues;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import dev.client.Client;
-import dev.event.impl.network.PacketReceiveEvent;
-import dev.event.impl.network.PacketSendEvent;
+import just.monika.开裂我端子的反编译我几行代码死几个妈.Client;
+import just.monika.反编译我代码油饼食不食.event.impl.network.PacketReceiveEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.network.PacketSendEvent;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.epoll.Epoll;

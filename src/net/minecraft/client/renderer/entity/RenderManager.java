@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer.entity;
 
 import com.google.common.collect.Maps;
-import dev.utils.misc.MathUtils;
+import just.monika.反编译我代码油饼食不食.utils.misc.MathUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.state.IBlockState;

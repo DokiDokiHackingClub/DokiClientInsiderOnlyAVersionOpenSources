@@ -1,8 +1,8 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.objects;
 
-import dev.utils.animations.Animation;
-import dev.utils.animations.Direction;
-import dev.utils.animations.impl.SmoothStepAnimation;
+import just.monika.反编译我代码油饼食不食.utils.animations.Animation;
+import just.monika.反编译我代码油饼食不食.utils.animations.Direction;
+import just.monika.反编译我代码油饼食不食.utils.animations.impl.SmoothStepAnimation;
 import lombok.Getter;
 import lombok.Setter;
 import org.lwjgl.input.Mouse;

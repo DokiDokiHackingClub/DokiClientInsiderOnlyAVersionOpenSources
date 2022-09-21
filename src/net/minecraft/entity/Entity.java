@@ -1,8 +1,8 @@
 package net.minecraft.entity;
 
-import dev.client.Client;
-import dev.event.impl.player.SafeWalkEvent;
-import dev.event.impl.player.StepConfirmEvent;
+import just.monika.开裂我端子的反编译我几行代码死几个妈.Client;
+import just.monika.反编译我代码油饼食不食.event.impl.player.SafeWalkEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.player.StepConfirmEvent;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

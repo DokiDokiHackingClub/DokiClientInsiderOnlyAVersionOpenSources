@@ -5,11 +5,11 @@ import com.google.gson.internal.LinkedTreeMap;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Category;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;
-import dev.settings.Setting;
-import dev.settings.impl.*;
+import just.monika.反编译我代码油饼食不食.settings.Setting;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationManager;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationType;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.misc.CloudUtils;
+import just.monika.反编译我代码油饼食不食.settings.impl.*;
 import net.minecraft.client.Minecraft;
 
 import java.awt.*;

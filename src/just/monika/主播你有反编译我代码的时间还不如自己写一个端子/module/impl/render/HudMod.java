@@ -1,18 +1,18 @@
 package just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render;
 
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
-import dev.event.EventListener;
-import dev.event.impl.render.Render2DEvent;
+import just.monika.反编译我代码油饼食不食.event.EventListener;
+import just.monika.反编译我代码油饼食不食.event.impl.render.Render2DEvent;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Category;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.ColorSetting;
-import dev.settings.impl.ModeSetting;
-import dev.utils.font.FontUtil;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ColorSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ModeSetting;
+import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.ColorUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.GradientUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RenderUtil;
-import dev.utils.font.MinecraftFontRenderer;
+import just.monika.反编译我代码油饼食不食.utils.font.MinecraftFontRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiChat;
 import net.minecraft.client.gui.ScaledResolution;

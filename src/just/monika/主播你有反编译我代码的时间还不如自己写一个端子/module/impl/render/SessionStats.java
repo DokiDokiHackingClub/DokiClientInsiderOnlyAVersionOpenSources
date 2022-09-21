@@ -7,14 +7,14 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.ColorUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RenderUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RoundedUtil;
-import dev.event.EventListener;
-import dev.event.impl.render.Render2DEvent;
-import dev.event.impl.render.ShaderEvent;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.ColorSetting;
-import dev.settings.impl.ModeSetting;
-import dev.utils.font.FontUtil;
-import dev.utils.render.StencilUtil;
+import just.monika.反编译我代码油饼食不食.event.EventListener;
+import just.monika.反编译我代码油饼食不食.event.impl.render.Render2DEvent;
+import just.monika.反编译我代码油饼食不食.event.impl.render.ShaderEvent;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ColorSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ModeSetting;
+import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
+import just.monika.反编译我代码油饼食不食.utils.render.StencilUtil;
 import net.minecraft.client.gui.Gui;
 
 import java.awt.*;

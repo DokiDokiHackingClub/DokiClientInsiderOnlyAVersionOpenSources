@@ -7,12 +7,12 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.blur.BloomUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.blur.GaussianBlur;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.blur.KawaseBlur;
-import dev.event.impl.render.ShaderEvent;
-import dev.settings.ParentAttribute;
-import dev.settings.impl.BooleanSetting;
-import dev.settings.impl.ModeSetting;
-import dev.settings.impl.NumberSetting;
-import dev.utils.render.StencilUtil;
+import just.monika.反编译我代码油饼食不食.event.impl.render.ShaderEvent;
+import just.monika.反编译我代码油饼食不食.settings.ParentAttribute;
+import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.ModeSetting;
+import just.monika.反编译我代码油饼食不食.settings.impl.NumberSetting;
+import just.monika.反编译我代码油饼食不食.utils.render.StencilUtil;
 import net.minecraft.client.shader.Framebuffer;
 
 public class BlurModule extends Module {
