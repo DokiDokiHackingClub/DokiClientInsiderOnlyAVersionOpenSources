@@ -4,10 +4,10 @@ import com.google.common.base.Predicates;
 import com.google.gson.JsonSyntaxException;
 import dev.client.Client;
 import dev.client.ClientType;
-import dev.client.tenacity.DokiClient;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 import dev.event.impl.render.Render3DEvent;
-import dev.client.tenacity.module.impl.combat.Reach;
-import dev.client.tenacity.module.impl.player.ChestStealer;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.combat.Reach;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.player.ChestStealer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.material.Material;
@@ -476,6 +476,7 @@ public class EntityRenderer implements IResourceManagerReloadListener {
             for (int j = 0; j < list.size(); ++j) {
                 Entity entity1 = list.get(j);
                 float f1 = entity1.getCollisionBorderSize();
+                //if(DokiClient.INSTANCE.getModuleCollection().getModuleByName("HitBox").cfgSettings.)
                 AxisAlignedBB axisalignedbb = entity1.getEntityBoundingBox().expand(f1, f1, f1);
                 MovingObjectPosition movingobjectposition = axisalignedbb.calculateIntercept(vec3, vec32);
 

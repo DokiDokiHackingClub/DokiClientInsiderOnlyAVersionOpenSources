@@ -1,8 +1,8 @@
 package net.minecraft.client.renderer;
 
-import dev.client.tenacity.DokiClient;
-import dev.client.tenacity.module.impl.combat.KillAura;
-import dev.client.tenacity.module.impl.render.Animations;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.combat.KillAura;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.Animations;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

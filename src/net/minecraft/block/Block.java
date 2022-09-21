@@ -1,7 +1,6 @@
 package net.minecraft.block;
 
 import dev.client.Client;
-import dev.client.tenacity.utils.Wrapper;
 import dev.event.impl.player.BoundingBoxEvent;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;

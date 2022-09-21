@@ -1,7 +1,7 @@
 package net.minecraft.client.gui.inventory;
 
 import com.google.common.collect.Sets;
-import dev.client.tenacity.module.impl.player.ChestStealer;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.player.ChestStealer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.renderer.GlStateManager;

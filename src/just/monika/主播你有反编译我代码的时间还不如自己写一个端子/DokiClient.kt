@@ -1,112 +1,66 @@
-package dev.client.tenacity;
+package just.monika.主播你有反编译我代码的时间还不如自己写一个端子
+
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.config.ConfigManager
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.config.DragManager
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.ModuleCollection
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.AltPanels
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.GuiAltManager
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.altmanager.helpers.KingGenApi
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.notifications.NotificationManager
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.sidegui.SideGui
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.client.ReleaseType
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.objects.Dragging
+import dev.event.Event
+import dev.event.EventProtocol
+import dev.utils.Utils
+import org.apache.logging.log4j.LogManager
+import java.awt.Color
+import java.io.File
+import java.util.concurrent.Executors
 
 //import dev.client.tenacity.commands.CommandHandler;
-import dev.client.tenacity.config.ConfigManager;
-import dev.client.tenacity.config.DragManager;
-import dev.client.tenacity.ui.altmanager.GuiAltManager;
-import dev.client.tenacity.ui.altmanager.AltPanels;
-import dev.client.tenacity.ui.altmanager.helpers.KingGenApi;
-import dev.client.tenacity.utils.misc.DiscordRP;
-import dev.client.tenacity.utils.objects.Dragging;
-import dev.event.Event;
-import dev.event.EventProtocol;
-import dev.client.tenacity.module.Module;
-import dev.client.tenacity.module.ModuleCollection;
-import dev.client.tenacity.ui.notifications.NotificationManager;
-import dev.client.tenacity.ui.sidegui.SideGui;
-import dev.utils.Utils;
-import dev.client.tenacity.utils.client.ReleaseType;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.awt.*;
-import java.io.File;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-public enum DokiClient implements Utils {
-
+enum class DokiClient : Utils {
     INSTANCE;
 
-    public static final String NAME = "DokiClient";
-    public static final String VERSION = "1.0";
-    public static final ReleaseType RELEASE = ReleaseType.DEV;
-    public static final Logger LOGGER = LogManager.getLogger(NAME);
-    public static final File DIRECTORY = new File(mc.mcDataDir, "DokiClient");
+    val eventProtocol = EventProtocol<Event>()
+    val notificationManager = NotificationManager()
+    val executorService = Executors.newSingleThreadExecutor()
+    val sideGui = SideGui()
+    var moduleCollection = ModuleCollection()
+    var configManager = ConfigManager()
 
+    //    public CommandHandler getCommandHandler() { return commandHandler; }
+    var altManager: GuiAltManager? = null
 
-    private final EventProtocol<Event> eventProtocol = new EventProtocol<>();
-    private final NotificationManager notificationManager = new NotificationManager();
-    private final ExecutorService executorService = Executors.newSingleThreadExecutor();
-    private final SideGui sideGui = new SideGui();
-    private ModuleCollection moduleCollection = new ModuleCollection();
+    @JvmField
+    val altPanels = AltPanels()
+    @JvmField
+    var kingGenApi: KingGenApi? = null
+    val version: String
+        get() = VERSION + if (RELEASE != ReleaseType.PUBLIC) " (" + RELEASE.getName() + ")" else ""
+    val clientColor: Color
+        get() = Color(236, 133, 209)
+    val alternateClientColor: Color
+        get() = Color(28, 167, 222)
 
-    private ConfigManager configManager = new ConfigManager();
-
-    private GuiAltManager altManager;
-//    private CommandHandler commandHandler;
-    private DiscordRP discordRP;
-    public final AltPanels altPanels = new AltPanels();
-    public KingGenApi kingGenApi;
-
-
-    public String getVersion() {
-        return VERSION + (RELEASE != ReleaseType.PUBLIC ? " (" + RELEASE.getName() + ")" : "");
+    fun isToggled(c: Class<out Module?>?): Boolean {
+        val m = moduleCollection[c]
+        return m != null && m.isToggled
     }
 
-    public final Color getClientColor() {
-        return new Color(236, 133, 209);
+    fun createDrag(module: Module?, name: String?, x: Float, y: Float): Dragging? {
+        DragManager.draggables[name] = Dragging(module, name, x, y)
+        return DragManager.draggables[name]
     }
 
-    public final Color getAlternateClientColor() {
-        return new Color(28, 167, 222);
+    companion object {
+        const val NAME = "DokiClient"
+        const val VERSION = "1.0"
+        val RELEASE = ReleaseType.DEV
+        @JvmField
+        val LOGGER = LogManager.getLogger(NAME)
+        @JvmField
+        val DIRECTORY = File(Utils.mc.mcDataDir, "DokiClient")
     }
-
-    public SideGui getSideGui() {
-        return sideGui;
-    }
-
-    public EventProtocol<Event> getEventProtocol() {
-        return eventProtocol;
-    }
-
-    public NotificationManager getNotificationManager() {
-        return notificationManager;
-    }
-
-//    public CommandHandler getCommandHandler() { return commandHandler; }
-
-    public GuiAltManager getAltManager() { return altManager; }
-
-    public ModuleCollection getModuleCollection() {
-        return moduleCollection;
-    }
-
-    public ConfigManager getConfigManager() {
-        return configManager;
-    }
-
-    public ExecutorService getExecutorService() { return executorService; }
-
-    public void setModuleCollection(ModuleCollection moduleCollection) { this.moduleCollection = moduleCollection; }
-
-    public void setConfigManager(ConfigManager configManager) { this.configManager = configManager; }
-
-    public void setAltManager(GuiAltManager altManager) { this.altManager = altManager; }
-
-//    public void setCommandHandler(CommandHandler commandHandler) { this.commandHandler = commandHandler; }
-
-    public void setDiscordRP(DiscordRP discordRP) { this.discordRP = discordRP; }
-
-
-    public boolean isToggled(Class<? extends Module> c) {
-        Module m = INSTANCE.moduleCollection.get(c);
-        return m != null && m.isToggled();
-    }
-
-    public Dragging createDrag(Module module, String name, float x, float y) {
-        DragManager.draggables.put(name, new Dragging(module, name, x, y));
-        return DragManager.draggables.get(name);
-    }
-
 }

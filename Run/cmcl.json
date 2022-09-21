@@ -1,0 +1,15 @@
+{
+  "exitWithMinecraft": false,
+  "selectedVersion": "DokiClient",
+  "javaPath": "C:\\Program Files\\Java\\jdk-17.0.2\\bin\\java.exe",
+  "windowSizeWidth": 854,
+  "windowSizeHeight": 480,
+  "language": "zh",
+  "downloadSource": 0,
+  "accounts": [{
+    "playerName": "DokiTest",
+    "loginMethod": 0,
+    "selected": true
+  }],
+  "maxMemory": 4069
+}

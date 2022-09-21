@@ -1,7 +1,6 @@
 package net.minecraft.client.renderer.entity;
 
 import com.google.common.collect.Maps;
-import dev.client.tenacity.utils.render.RenderUtil;
 import dev.utils.misc.MathUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
@@ -40,14 +39,9 @@ import net.minecraft.world.World;
 import net.optifine.entity.model.CustomEntityModels;
 import net.optifine.player.PlayerItemsLayer;
 import net.optifine.shaders.Shaders;
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL14;
 
-import java.awt.*;
 import java.util.Collections;
 import java.util.Map;
-
-import static org.lwjgl.opengl.GL11.glDepthMask;
 
 public class RenderManager {
     private Map<Class, Render> entityRenderMap = Maps.newHashMap();

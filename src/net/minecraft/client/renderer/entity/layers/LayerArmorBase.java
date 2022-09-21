@@ -1,8 +1,8 @@
 package net.minecraft.client.renderer.entity.layers;
 
 import com.google.common.collect.Maps;
-import dev.client.tenacity.DokiClient;
-import dev.client.tenacity.module.impl.render.Animations;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.Animations;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RendererLivingEntity;

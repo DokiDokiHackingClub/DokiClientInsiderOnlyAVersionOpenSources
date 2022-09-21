@@ -13,11 +13,12 @@ import com.mojang.authlib.properties.PropertyMap;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import dev.client.Client;
 import dev.client.EnterScreen;
-import dev.client.tenacity.DokiClient;
-import dev.client.tenacity.module.impl.render.ClickGuiMod;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.config.ConfigManager;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.impl.render.ClickGuiMod;
 //import dev.client.tenacity.protection.ProtectedLaunch;
-import dev.client.tenacity.ui.SplashScreen;
-import dev.client.tenacity.ui.clickguis.dropdown.DropdownClickGui;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.SplashScreen;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.ui.clickguis.dropdown.DropdownClickGui;
 import dev.event.impl.game.GameCloseEvent;
 import dev.event.impl.game.KeyPressEvent;
 import dev.event.impl.game.TickEvent;
@@ -495,6 +496,11 @@ public class Minecraft implements IThreadListener, IPlayerUsage {
         FontUtil.tenacityFont24_ = FontUtil.getFont(locationMap, "tenacity.ttf", 32);
         FontUtil.tenacityFont24 = new MinecraftFontRenderer(FontUtil.tenacityFont24_);
         DokiClient.INSTANCE.getModuleCollection().init();
+        try{
+            ConfigManager.loadConfig();
+        } catch (Throwable t){
+            t.printStackTrace();
+        }
 
 
         SplashScreen.init();

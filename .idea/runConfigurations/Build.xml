@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Build" type="AntRunConfiguration" singleton="false">
+    <method v="2">
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="DokiClient" />
+      </option>
+    </method>
+  </configuration>
+</component>

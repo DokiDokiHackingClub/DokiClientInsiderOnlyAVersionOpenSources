@@ -4,7 +4,7 @@ import com.sun.jna.Native;
 import com.sun.jna.platform.win32.User32;
 import com.sun.jna.platform.win32.WinDef;
 import com.sun.jna.platform.win32.WinNT;
-import dev.client.tenacity.DokiClient;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 
 public class LInput {
 

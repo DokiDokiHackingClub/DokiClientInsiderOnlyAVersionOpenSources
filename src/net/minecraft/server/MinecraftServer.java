@@ -10,7 +10,7 @@ import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.GameProfileRepository;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
-import dev.client.tenacity.DokiClient;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.DokiClient;
 import dev.event.impl.game.GameCloseEvent;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufOutputStream;
