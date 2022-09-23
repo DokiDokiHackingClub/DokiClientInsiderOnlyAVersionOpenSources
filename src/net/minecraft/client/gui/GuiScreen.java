@@ -3,6 +3,8 @@ package net.minecraft.client.gui;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.command.Command;
+import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.command.CommandManager;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
@@ -46,7 +48,7 @@ import java.util.Set;
 public abstract class GuiScreen extends Gui implements GuiYesNoCallback
 {
     private static final Logger LOGGER = LogManager.getLogger();
-    private static final Set<String> PROTOCOLS = Sets.newHashSet(new String[] {"http", "https"});
+    private static final Set<String> PROTOCOLS = Sets.newHashSet("http", "https");
     private static final Splitter NEWLINE_SPLITTER = Splitter.on('\n');
 
     /** Reference to the Minecraft object. */
@@ -471,6 +473,13 @@ public abstract class GuiScreen extends Gui implements GuiYesNoCallback
 
     public void sendChatMessage(String msg, boolean addToChat)
     {
+        if(msg.startsWith(".")){
+            String[] args=msg.split(" ");
+            Command  command = CommandManager.INSTANCE.getCommandByName(args[0]);
+            if(command==null) return;
+            command.onTyped(Arrays.copyOfRange(args, 1, args.length));
+            return;
+        }
         if (addToChat)
         {
             this.mc.ingameGUI.getChatGUI().addToSentMessages(msg);
