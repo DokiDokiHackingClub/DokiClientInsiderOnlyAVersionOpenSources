@@ -15,6 +15,7 @@ import static org.lwjgl.input.Keyboard.KEY_P;
 public final class IQBoost extends Module {
 
     private final EventListener<KeyPressEvent> motionEventEventListener = event -> {
+        //this.setSuffix(this.getSettingsList().get(0).getConfigValue().toString());
         if (Keyboard.isKeyDown(KEY_P)) {
             Random r = new Random();
             mc.thePlayer.sendChatMessage(LMessages[r.nextInt(LMessages.length)]);

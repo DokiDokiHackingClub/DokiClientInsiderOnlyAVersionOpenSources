@@ -2,6 +2,7 @@ package just.monika.主播你有反编译我代码的时间还不如自己写一
 
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Category;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.module.Module;
+import just.monika.反编译我代码油饼食不食.event.Event;
 import just.monika.反编译我代码油饼食不食.event.EventListener;
 import just.monika.反编译我代码油饼食不食.event.impl.player.MotionEvent;
 import just.monika.反编译我代码油饼食不食.event.impl.player.SlowDownEvent;
@@ -16,9 +17,7 @@ public class NoSlow extends Module {
         super("NoSlow", Category.PLAYER, "Makes you not slow down while using items");
     }
 
-    private final EventListener<SlowDownEvent> onSlowDown = e -> {
-        e.cancel();
-    };
+    private final EventListener<SlowDownEvent> onSlowDown = Event::cancel;
 
     private final EventListener<MotionEvent> onMotion = e -> {
         if(mc.thePlayer.isUsingItem()) {

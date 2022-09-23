@@ -167,8 +167,9 @@ public class GuiIngame extends Gui
         }
 
         BlurModule blurModule = (BlurModule) DokiClient.INSTANCE.getModuleCollection().get(BlurModule.class);
+        try{blurModule.blurScreen();}catch (Throwable ignored){}
 
-        blurModule.blurScreen();
+
 
         Client.dispatchEvent(new Render2DEvent(scaledresolution.getScaledWidth(), scaledresolution.getScaledHeight()));
 

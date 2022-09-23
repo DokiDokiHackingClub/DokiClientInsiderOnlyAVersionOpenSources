@@ -47,7 +47,7 @@ public class HudMod extends Module {
 
         GradientUtil.applyGradientHorizontal(5, 5, (float) FontUtil.tenacityBoldFont40.getStringWidth(DokiClient.NAME.toLowerCase()), 20, 1, clientColors[0], clientColors[1], () -> {
             RenderUtil.setAlphaLimit(0);
-            FontUtil.tenacityBoldFont40.drawString(DokiClient.NAME.toLowerCase(), 5, 5, new Color(0,0,0,0).getRGB());
+            FontUtil.tenacityBoldFont40.drawString(DokiClient.NAME, 5, 5, new Color(0,0,0,0).getRGB());
         });
         RenderUtil.resetColor();
         FontUtil.tenacityFont20.drawString(DokiClient.VERSION, FontUtil.tenacityBoldFont40.getStringWidth(DokiClient.NAME.toLowerCase()) + 6, 5, clientColors[1].getRGB());

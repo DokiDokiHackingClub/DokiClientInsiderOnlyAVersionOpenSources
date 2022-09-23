@@ -16,5 +16,6 @@
     <orderEntry type="library" name="apache.logging.log4j.core" level="project" />
     <orderEntry type="library" name="net.java.dev.jna" level="project" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="library" name="reflections" level="project" />
   </component>
 </module>

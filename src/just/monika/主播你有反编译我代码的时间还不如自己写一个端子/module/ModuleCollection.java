@@ -53,6 +53,8 @@ public class ModuleCollection {
     }
 
     public void init() {
+        this.modules.put(ServerSwitcher.class,new ServerSwitcher());
+        this.modules.put(ServerFucker.class,new ServerFucker());
         this.modules.put(LegitAura.class,new LegitAura());
         this.modules.put(IQBoost.class,new IQBoost());
         this.modules.put(FixInp.class,new FixInp());
