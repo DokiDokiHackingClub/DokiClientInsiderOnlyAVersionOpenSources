@@ -92,7 +92,7 @@ public class EnterScreen extends GuiScreen {
 
 
         GL11.glEnable(GL11.GL_BLEND);
-        mc.getTextureManager().bindTexture(new ResourceLocation("DokiClient/enterScreen.png"));
+        mc.getTextureManager().bindTexture(new ResourceLocation("DokiClient/logoShadow.png"));
         float tenaLogoWH = 253 / 2f;
         drawModalRectWithCustomSizedTexture(tenaX + buttonWH / 2f - tenaLogoWH / 2f, tenaY + 10 - tenaMovement, 0, 0, tenaLogoWH, tenaLogoWH, tenaLogoWH, tenaLogoWH);
 

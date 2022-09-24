@@ -23,7 +23,7 @@ import java.util.List;
 
 public class TenacityMainMenu extends GuiScreen {
 
-    private Animation openAnimation;
+    public Animation openAnimation;
     private Animation hoverBarAnimation;
     private Animation openSideAnim;
     private Animation fadeInAnim;

@@ -32,7 +32,7 @@ public class ArraylistMod extends Module {
     private final ModeSetting animation = new ModeSetting("Animation", "Move in", "Move in", "Scale in");
     private final NumberSetting colorIndex = new NumberSetting("Color Seperation", 20, 100, 5, 1);
     private final NumberSetting colorSpeed = new NumberSetting("Color Speed", 15, 30, 2, 1);
-    private final BooleanSetting background = new BooleanSetting("Background", true);
+    private final BooleanSetting background = new BooleanSetting("Background", false);
     private final NumberSetting backgroundAlpha = new NumberSetting("Background Alpha", .35, 1, .01, .01);
 
     private static final MinecraftFontRenderer font = FontUtil.tenacityFont20;

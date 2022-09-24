@@ -8,14 +8,17 @@ import just.monika.主播你有反编译我代码的时间还不如自己写一�
 import just.monika.反编译我代码油饼食不食.settings.impl.BooleanSetting;
 import just.monika.反编译我代码油饼食不食.settings.impl.ColorSetting;
 import just.monika.反编译我代码油饼食不食.settings.impl.ModeSetting;
+import just.monika.反编译我代码油饼食不食.utils.animations.impl.ElasticAnimation;
 import just.monika.反编译我代码油饼食不食.utils.font.FontUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.ColorUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.GradientUtil;
 import just.monika.主播你有反编译我代码的时间还不如自己写一个端子.utils.render.RenderUtil;
 import just.monika.反编译我代码油饼食不食.utils.font.MinecraftFontRenderer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiChat;
 import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.util.ResourceLocation;
 
 import java.awt.*;
 import java.util.*;
@@ -47,10 +50,19 @@ public class HudMod extends Module {
 
         GradientUtil.applyGradientHorizontal(5, 5, (float) FontUtil.tenacityBoldFont40.getStringWidth(DokiClient.NAME.toLowerCase()), 20, 1, clientColors[0], clientColors[1], () -> {
             RenderUtil.setAlphaLimit(0);
-            FontUtil.tenacityBoldFont40.drawString(DokiClient.NAME, 5, 5, new Color(0,0,0,0).getRGB());
+            //FontUtil.tenacityBoldFont40.drawString(DokiClient.NAME, 5, 5, new Color(0,0,0,0).getRGB());
+            ScaledResolution sr = new ScaledResolution(mc);
+            ElasticAnimation openAnimation = new ElasticAnimation(750, 1, 3.8f, 1.75f, false);
+            int width = sr.getScaledWidth();
+            int height = sr.getScaledHeight();
+            float textureWH = 310;
+            float textureY = (float) (height / 2f - (textureWH / 4f + (70 * openAnimation.getOutput())));
+            mc.getTextureManager().bindTexture(new ResourceLocation("DokiClient/logoShadow.png"));
+            Gui.drawModalRectWithCustomSizedTexture(0,0,0,0,textureWH / 4, textureWH / 4,
+                    textureWH / 4, textureWH / 4);
         });
         RenderUtil.resetColor();
-        FontUtil.tenacityFont20.drawString(DokiClient.VERSION, FontUtil.tenacityBoldFont40.getStringWidth(DokiClient.NAME.toLowerCase()) + 6, 5, clientColors[1].getRGB());
+        FontUtil.tenacityFont20.drawString(DokiClient.VERSION, 80, 5, clientColors[1].getRGB());
 
         drawInfo(clientColors);
     };
