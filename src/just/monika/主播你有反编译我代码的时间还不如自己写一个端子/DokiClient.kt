@@ -19,7 +19,6 @@ import java.awt.Color
 import java.io.File
 import java.util.concurrent.Executors
 
-//import dev.client.tenacity.commands.CommandHandler;
 enum class DokiClient : Utils {
     INSTANCE;
 

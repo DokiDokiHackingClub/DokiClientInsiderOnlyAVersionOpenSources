@@ -198,8 +198,7 @@ class CrashUtils {
         val compound = NBTTagCompound()
         val tagList = NBTTagList()
         val builder = StringBuilder()
-        val hold: Item
-        hold = when (booktype) {
+        val hold: Item = when (booktype) {
             0 -> Items.writable_book
             1 -> Items.book
             2 -> Items.written_book
